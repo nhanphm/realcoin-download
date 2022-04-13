@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://static.realcoin.vn/download.html -->
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Download app</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;display=swap"
+		rel="stylesheet">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="https://static.realcoin.vn/images/icons/favicon.ico">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="./download_files/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="./download_files/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="./download_files/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="./download_files/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="./download_files/util.css">
+	<link rel="stylesheet" type="text/css" href="./download_files/main.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" href="./download_files/download.css">
+</head>
+
+<body cz-shortcut-listen="true">
+	<div class="download-app download-app__sec01">
+		<div class="download-app__inner">
+			<div class="download-app__img">
+			</div>
+			<div class="download-app__content">
+				<div class="onlyDesktop onlyTablet">
+					<h3 class="ttl">
+						Vốn đầu tư chỉ một triệu đồng
+					</h3>
+					<h2 class="ttl-2">
+						Với lợi suất phi mã
+					</h2>
+				</div>
+
+				<div class="onlyMobile">
+					<h3 class="ttl">
+						Vốn đầu tư
+					</h3>
+					<h3 class="ttl-2">
+						chỉ một triệu đồng
+					</h3>
+					<h3 class="ttl">
+						Với lợi suất
+					</h3>
+					<h1 class="ttl-3">
+						Phi mã
+					</h1>
+				</div>
+
+				
+				<p class="info">
+					Trở thành nhà đầu tư<img src="./download_files/2x/logo.png" alt="" />ngay
+				</p>
+				<a class="btn-download jsSmooth" href="#download-app">
+					<img src="./download_files/2x/chplay.png" alt="">
+				</a>
+				<a class="btn-download jsSmooth" href="#download-app">
+					<img src="./download_files/2x/appstore.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="download-app download-app__sec02" id="download-app">
+		<div class="download-app__inner">
+			<div class="download-app__content">
+				<h3 class="ttl onlyDesktop">Realcoin tiềm năng - đáng đầu tư</h3>
+				<div class="onlyMobile onlyTablet">
+					<h3 class="ttl">Realcoin tiềm năng</h3>
+					<h3 class="ttl-2">Đáng đầu tư</h3>
+				</div>
+				<ul class="list_info">
+					<li>Bất động sản bảo lãnh</li>
+					<li>Tính bảo mật cao</li>
+					<li>Tính thanh khoản tốt</li>
+					<li>Phương thức đầu tư <span>HOT</span></li>
+				</ul>
+				<div class="download">
+					<h3 class="info">
+						Tải app chớp ngay thời cơ cùng<img src="./download_files/2x/logo.png" alt="" />
+					</h3>
+					<div class="item">
+						<a href="https://play.google.com/store/apps/details?id=com.fintech.realcoin" class="gg-play"
+							target="_blank">
+							<img src="./download_files/2x/chplay.png" alt="">
+						</a>
+					</div>
+					<div class="item">
+						<a href="https://apps.apple.com/vn/app/realcoin/id1598079209" class="app-store" target="_blank">
+							<img src="./download_files/2x/appstore.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>mendeleyWebImporter = {
+			downloadPdfs(e, t) { return this._call('downloadPdfs', [e, t]); },
+			open() { return this._call('open', []); },
+			setLoginToken(e) { return this._call('setLoginToken', [e]); },
+			_call(methodName, methodArgs) {
+				const id = Math.random();
+				window.postMessage({ id, token: '0.18609970214734095', methodName, methodArgs }, 'https://static.realcoin.vn');
+				return new Promise(resolve => {
+					const listener = window.addEventListener('message', event => {
+						const data = event.data;
+						if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
+						window.removeEventListener('message', listener);
+						resolve(data.result);
+					});
+				});
+			}
+		};</script>
+</body>
+
+</html>
