@@ -10,7 +10,10 @@
 .download-app {
     font-family: 'UTM Hanzel', Montserrat, sans-serif;
     color: #fff;
-    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size:1.6rem;
+    font-size: 16px;
 }
 .download-app__sec01 {
     background: url('./2x/desktop-1.png') no-repeat;
@@ -39,8 +42,8 @@
 }
 .download-app__sec01 .ttl {
     padding-top: 0.41666666666vw;
-    font-size: 2.5vw;
-    font-weight: 500;
+    font-size: 2vw;
+    font-weight: 400;
     line-height: 1.4;
     text-transform: uppercase;
 }
@@ -57,13 +60,15 @@
 }
 .download-app__sec01 .info {
     padding-top: 5.72916666666vw;
+    font-family: Montserrat;
     font-size: 2vw;
+    font-weight: 500;
     display: flex;
     align-items: baseline;
 }
 
 .download-app__sec01 .info img{
-    height: 22px;
+    height: 20px;
     padding: 0px 10px;
     margin-bottom: -5px;
 }
@@ -179,7 +184,7 @@
 }
 
 /* end .download-app__sec02 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
     .onlyDesktop {
         display: none;
     }
@@ -314,7 +319,7 @@
     }
     .download-app__sec02 .ttl {
         margin-top: 1.04166666667vw;
-        font-size: 32px;
+        font-size: 7vw;
         line-height: 1.9;
         font-weight: bold;
         text-transform: uppercase;
@@ -323,7 +328,7 @@
 
     .download-app__sec02 .ttl-2 {
         margin-top: 1.04166666667vw;
-        font-size: 46px;
+        font-size: 10vw;
         line-height: 1.9;
         font-weight: bold;
         text-transform: uppercase;
@@ -331,15 +336,15 @@
     }
 
     .download-app__sec02 .list_info {
-        margin-top: 49px;
-        margin-left: 4px;
+        margin-top: 6vw;
+        margin-left: 1vw;
         padding: 3vw 5vw;
         border-radius: 5vw;
     }
     .download-app__sec02 .list_info li {
-        padding-bottom: 41px;
-        padding-left: 47px;
-        font-size: 18px;
+        padding-bottom: 2vw;
+        padding-left: 7vw;
+        font-size: 5vw;
     }
     .download-app__sec02 .list_info li::before {
         top: 5px;
@@ -386,54 +391,6 @@
     }
     .download-app__sec02 .download .item .app-store img {
         width: 35vw;
-    }
-    /* end .download-app__sec02 */
-}
-@media screen and (max-width: 767px){
-    .download-app__sec01 .download-app__img {
-        margin-top: -54px;
-    }
-    .download-app__sec01 .download-app__content {
-        width: 100%;
-        padding-top: 60px;
-    }
-    .download-app__sec01 .ttl {
-        padding: 0 16px;
-    }
-    .download-app__sec01 .info {
-        padding-top: 0;
-    }
-    .download-app__sec01 .download-app__img img.onlySp {
-        top: -39px;
-        left: calc(50% + 127px);
-    }
-    .download-app__sec01 .download-app__img img {
-        left: calc(50% + 48px);
-    }
-    /* end .download-app__sec01 */
-    .download-app__sec02 .download-app__img {
-        height: 510px;
-    }
-    .download-app__sec02 .download-app__img img {
-        width: 594px;
-        left: 54%;
-    }
-    .download-app__sec02 .download-app__content {
-        order: 1;
-        padding: 78px 24px 62px;
-    }
-    .download-app__sec02 .ttl {
-        margin-top: 0;
-        line-height: 1.5;
-    }
-    .download-app__sec02 .list_info {
-        margin-top: 25px;
-    }
-    .download-app__sec02 .list_info li {
-        padding-bottom: 14px;
-    }
-    .download-app__sec02 .download {
-        margin-top: 26px;
     }
     /* end .download-app__sec02 */
 }
