@@ -315,7 +315,7 @@
     }
     .download-app__sec02 .download-app__content {
         order: 1;
-        padding: 80px 65px 72px;
+        padding: 80px 4vw 4vw;
     }
     .download-app__sec02 .ttl {
         margin-top: 1.04166666667vw;
@@ -393,15 +393,6 @@
         width: 30vw;
     }
     /* end .download-app__sec02 */
-}
-
-@media screen and (max-width: 330px){
-    .download-app__sec01 .ttl span {
-        font-size: 32px;
-    }
-    .download-app__sec02 .ttl {
-        font-size: 32px;
-    }
 }
 
 /* tablet */
